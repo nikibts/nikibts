@@ -1,4 +1,13 @@
-IntToBinary(n1):
-  if n1 >= 1:
-    IntToBinary(num//2)
-   print(num % 2)
+def BinaryConvert(n1):
+    if n1 >= 1:
+        BinaryConvert(n1//2)
+    print(n1 % 2, end= "")
+
+if __name__ == '__main__':
+try:
+  n = int(input("Enter a no.: "))
+    print("\nBinary Value is:")
+    BinaryConvert(n)
+except:
+  print("It doesn't supports to convert the negative number into binary.")
+  
