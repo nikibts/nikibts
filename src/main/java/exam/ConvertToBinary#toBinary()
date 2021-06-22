@@ -1,0 +1,4 @@
+IntToBinary(n1):
+  if n1 >= 1:
+    IntToBinary(num//2)
+   print(num % 2)
